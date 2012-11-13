@@ -15,5 +15,5 @@ REM  See the License for the specific language governing permissions and
 REM  limitations under the License.
 REM 
 REM 
-copy /Y src\main\include\log4cxx\log4cxx.hw src\main\include\log4cxx\log4cxx.h
-copy /Y src\main\include\log4cxx\private\log4cxx_private.hw src\main\include\log4cxx\private\log4cxx_private.h
+copy /Y %~dp0\src\main\include\log4cxx\log4cxx.hw %~dp0\src\main\include\log4cxx\log4cxx.h
+copy /Y %~dp0\src\main\include\log4cxx\private\log4cxx_private.hw %~dp0\src\main\include\log4cxx\private\log4cxx_private.h
