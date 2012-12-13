@@ -74,14 +74,14 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="ADVAPI32.LIB WS2_32.LIB MSWSOCK.LIB SHELL32.LIB ODBC32.LIB apr-2.lib libexpatMT.lib"
-				OutputFile=".\Debug/log4cxx.dll"
+				OutputFile=".\Debug/log4cxxd.dll"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
 				AdditionalLibraryDirectories="..\..\apr\LibD;..\..\expat\win32\bin\debug"
 				GenerateDebugInformation="true"
-				ProgramDatabaseFile=".\Debug/log4cxx.pdb"
+				ProgramDatabaseFile=".\Debug/log4cxxd.pdb"
 				SubSystem="1"
-				ImportLibrary=".\Debug/log4cxx.lib"
+				ImportLibrary=".\Debug/log4cxxd.lib"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -156,6 +156,7 @@
 				ObjectFile=".\Release/"
 				ProgramDataBaseFileName=".\Release/"
 				SuppressStartupBanner="true"
+				DebugInformationFormat="3"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"
@@ -174,7 +175,8 @@
 				OutputFile=".\Release/log4cxx.dll"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories="..\..\apr\LibR ..\..\expat\win32\bin\release"
+				AdditionalLibraryDirectories="..\..\apr\LibR;..\..\expat\win32\bin\release"
+				GenerateDebugInformation="true"
 				ProgramDatabaseFile=".\Release/log4cxx.pdb"
 				SubSystem="1"
 				ImportLibrary=".\Release/log4cxx.lib"
