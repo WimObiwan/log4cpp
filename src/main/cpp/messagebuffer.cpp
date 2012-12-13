@@ -96,6 +96,8 @@ std::ostream& CharMessageBuffer::operator<<(int val) { return ((std::ostream&) *
 std::ostream& CharMessageBuffer::operator<<(unsigned int val) { return ((std::ostream&) *this).operator<<(val); }
 std::ostream& CharMessageBuffer::operator<<(long val) { return ((std::ostream&) *this).operator<<(val); }
 std::ostream& CharMessageBuffer::operator<<(unsigned long val) { return ((std::ostream&) *this).operator<<(val); }
+std::ostream& CharMessageBuffer::operator<<(long long val) { return ((std::ostream&) *this).operator<<(val); }
+std::ostream& CharMessageBuffer::operator<<(unsigned long long val) { return ((std::ostream&) *this).operator<<(val); }
 std::ostream& CharMessageBuffer::operator<<(float val) { return ((std::ostream&) *this).operator<<(val); }
 std::ostream& CharMessageBuffer::operator<<(double val) { return ((std::ostream&) *this).operator<<(val); }
 std::ostream& CharMessageBuffer::operator<<(long double val) { return ((std::ostream&) *this).operator<<(val); }
@@ -180,6 +182,8 @@ std::basic_ostream<wchar_t>& WideMessageBuffer::operator<<(int val) { return ((s
 std::basic_ostream<wchar_t>& WideMessageBuffer::operator<<(unsigned int val) { return ((std::basic_ostream<wchar_t>&) *this).operator<<(val); }
 std::basic_ostream<wchar_t>& WideMessageBuffer::operator<<(long val) { return ((std::basic_ostream<wchar_t>&) *this).operator<<(val); }
 std::basic_ostream<wchar_t>& WideMessageBuffer::operator<<(unsigned long val) { return ((std::basic_ostream<wchar_t>&) *this).operator<<(val); }
+std::basic_ostream<wchar_t>& WideMessageBuffer::operator<<(long long val) { return ((std::basic_ostream<wchar_t>&) *this).operator<<(val); }
+std::basic_ostream<wchar_t>& WideMessageBuffer::operator<<(unsigned long long val) { return ((std::basic_ostream<wchar_t>&) *this).operator<<(val); }
 std::basic_ostream<wchar_t>& WideMessageBuffer::operator<<(float val) { return ((std::basic_ostream<wchar_t>&) *this).operator<<(val); }
 std::basic_ostream<wchar_t>& WideMessageBuffer::operator<<(double val) { return ((std::basic_ostream<wchar_t>&) *this).operator<<(val); }
 std::basic_ostream<wchar_t>& WideMessageBuffer::operator<<(long double val) { return ((std::basic_ostream<wchar_t>&) *this).operator<<(val); }
@@ -274,6 +278,8 @@ std::ostream& MessageBuffer::operator<<(int val) { return cbuf.operator<<(val); 
 std::ostream& MessageBuffer::operator<<(unsigned int val) { return cbuf.operator<<(val); }
 std::ostream& MessageBuffer::operator<<(long val) { return cbuf.operator<<(val); }
 std::ostream& MessageBuffer::operator<<(unsigned long val) { return cbuf.operator<<(val); }
+std::ostream& MessageBuffer::operator<<(long long val) { return cbuf.operator<<(val); }
+std::ostream& MessageBuffer::operator<<(unsigned long long val) { return cbuf.operator<<(val); }
 std::ostream& MessageBuffer::operator<<(float val) { return cbuf.operator<<(val); }
 std::ostream& MessageBuffer::operator<<(double val) { return cbuf.operator<<(val); }
 std::ostream& MessageBuffer::operator<<(long double val) { return cbuf.operator<<(val); }
@@ -390,6 +396,8 @@ UniCharMessageBuffer::uostream& UniCharMessageBuffer::operator<<(int val) { retu
 UniCharMessageBuffer::uostream& UniCharMessageBuffer::operator<<(unsigned int val) { return ((UniCharMessageBuffer::uostream&) *this).operator<<(val); }
 UniCharMessageBuffer::uostream& UniCharMessageBuffer::operator<<(long val) { return ((UniCharMessageBuffer::uostream&) *this).operator<<(val); }
 UniCharMessageBuffer::uostream& UniCharMessageBuffer::operator<<(unsigned long val) { return ((UniCharMessageBuffer::uostream&) *this).operator<<(val); }
+UniCharMessageBuffer::uostream& UniCharMessageBuffer::operator<<(long long val) { return ((UniCharMessageBuffer::uostream&) *this).operator<<(val); }
+UniCharMessageBuffer::uostream& UniCharMessageBuffer::operator<<(unsigned long long val) { return ((UniCharMessageBuffer::uostream&) *this).operator<<(val); }
 UniCharMessageBuffer::uostream& UniCharMessageBuffer::operator<<(float val) { return ((UniCharMessageBuffer::uostream&) *this).operator<<(val); }
 UniCharMessageBuffer::uostream& UniCharMessageBuffer::operator<<(double val) { return ((UniCharMessageBuffer::uostream&) *this).operator<<(val); }
 UniCharMessageBuffer::uostream& UniCharMessageBuffer::operator<<(long double val) { return ((UniCharMessageBuffer::uostream&) *this).operator<<(val); }

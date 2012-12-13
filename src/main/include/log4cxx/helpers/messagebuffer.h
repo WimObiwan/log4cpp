@@ -120,6 +120,18 @@ namespace log4cxx {
          *   @param val build in type.
          *   @return encapsulated STL stream.
          */
+        std::ostream& operator<<(long long val);
+        /**
+         *   Insertion operator for built-in type.
+         *   @param val build in type.
+         *   @return encapsulated STL stream.
+         */
+        std::ostream& operator<<(unsigned long long val);
+        /**
+         *   Insertion operator for built-in type.
+         *   @param val build in type.
+         *   @return encapsulated STL stream.
+         */
         std::ostream& operator<<(float val);
         /**
          *   Insertion operator for built-in type.
@@ -294,6 +306,18 @@ std::basic_ostream<char>& operator<<(CharMessageBuffer& os, const V& val) {
          *   @param val build in type.
          *   @return encapsulated STL stream.
          */
+        uostream& operator<<(long long val);
+        /**
+         *   Insertion operator for built-in type.
+         *   @param val build in type.
+         *   @return encapsulated STL stream.
+         */
+        uostream& operator<<(unsigned long long val);
+        /**
+         *   Insertion operator for built-in type.
+         *   @param val build in type.
+         *   @return encapsulated STL stream.
+         */
         uostream& operator<<(float val);
         /**
          *   Insertion operator for built-in type.
@@ -453,6 +477,18 @@ UniCharMessageBuffer::uostream& operator<<(UniCharMessageBuffer& os, const V& va
          *   @return encapsulated STL stream.
          */
         std::basic_ostream<wchar_t>& operator<<(unsigned long val);
+        /**
+         *   Insertion operator for built-in type.
+         *   @param val build in type.
+         *   @return encapsulated STL stream.
+         */
+        std::basic_ostream<wchar_t>& operator<<(long long val);
+        /**
+         *   Insertion operator for built-in type.
+         *   @param val build in type.
+         *   @return encapsulated STL stream.
+         */
+        std::basic_ostream<wchar_t>& operator<<(unsigned long long val);
         /**
          *   Insertion operator for built-in type.
          *   @param val build in type.
@@ -710,6 +746,18 @@ std::basic_ostream<wchar_t>& operator<<(WideMessageBuffer& os, const V& val) {
          *   @return encapsulated STL stream.
          */
         std::ostream& operator<<(unsigned long val);
+        /**
+         *   Insertion operator for built-in type.
+         *   @param val build in type.
+         *   @return encapsulated STL stream.
+         */
+        std::ostream& operator<<(long long val);
+        /**
+         *   Insertion operator for built-in type.
+         *   @param val build in type.
+         *   @return encapsulated STL stream.
+         */
+        std::ostream& operator<<(unsigned long long val);
         /**
          *   Insertion operator for built-in type.
          *   @param val build in type.
