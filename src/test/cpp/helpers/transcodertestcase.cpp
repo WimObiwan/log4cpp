@@ -321,7 +321,7 @@ public:
             }
             lascii[0x5F] = 0;
             ascii[0x5F] = 0;
-            std::string encoded(Transcoder::encodeCharsetName(LogString(ascii)));
+            std::string encoded(Transcoder::encodeCharsetName(LogString(lascii)));
             LOGUNIT_ASSERT_EQUAL(std::string(" !\"#$%&'()*+,-./"), encoded.substr(0, 0x10));
             if (0x40 == 'A') {
                 LOGUNIT_ASSERT_EQUAL(std::string(ascii), encoded);
